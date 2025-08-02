@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f6f8;
+}
+
+header {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.filters {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0 0 0.5rem;
+}
+
+.card-content .price {
+  color: #e76f51;
+  font-weight: bold;
+}
+
+.card-content .rating {
+  color: #f4a261;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.card-content button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.card-content button:hover {
+  background: #21867a;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal.hidden {
+  display: none;
+}
+.modal-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 300px;
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input, form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}

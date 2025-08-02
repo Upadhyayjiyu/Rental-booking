@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vacation Rentals</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🏡 Vacation Rental Finder</h1>
+    <div class="filters">
+      <label><input type="checkbox" id="nonSmoking"> Non-Smoking</label>
+      <select id="amenityFilter">
+        <option value="">All Amenities</option>
+        <option value="pool">Pool</option>
+        <option value="wifi">WiFi</option>
+        <option value="kitchen">Kitchen</option>
+      </select>
+    </div>
+  </header>
+
+  <main id="listings" class="card-container">
+    <!-- Cards go here -->
+  </main>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal hidden">
+    <div class="modal-box">
+      <span class="close-btn" id="closeModal">&times;</span>
+      <h2>Book Now</h2>
+      <form id="bookingForm">
+        <label>Check-in: <input type="date" required></label>
+        <label>Check-out: <input type="date" required></label>
+        <label>Guests: <input type="number" min="1" required></label>
+        <button type="submit">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
